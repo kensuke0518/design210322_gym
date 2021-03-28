@@ -10,9 +10,15 @@
     font-weight: bold;
     animation: bound 2s infinite;
     transition: all .5s;
+    @include mq(){
+        width: 100%;
+    }
     &__outer{
         width: 960px;
         margin: 0 auto;
+        @include mq(){
+            width: 100%;
+        }
     }
 }
 .c-btn:hover{

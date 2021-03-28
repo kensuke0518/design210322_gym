@@ -6,6 +6,9 @@
         &__inner{
             width: 960px;
             margin: 0 auto;
+            @include mq(){
+                width: 100%;
+            }
         }
         &__list-wrap{
             width: 640px;
@@ -13,6 +16,10 @@
             padding: 0 0 70px;
             display: flex;
             justify-content: space-between;
+            @include mq(){
+                width: 100%;
+                flex-direction: column;
+            }
         }
         &__list-item{
             margin-top: 15px;
@@ -37,14 +44,24 @@
             margin: auto;
             display: flex;
             align-items: center;
+            @include mq(){
+                width: 100%;
+                flex-direction: column;
+            }
         }
         &__info{
             margin-left: auto;
+            @include mq(){
+                margin-left: 0;
+            }
         }
         &__copyright{
             width: 960px;
             margin: 0 auto;
             text-align: center;
+            @include mq(){
+                width: 100%;
+            }
         }
     }
 }

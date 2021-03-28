@@ -8,6 +8,10 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    @include mq(){
+        width: 100%;
+        flex-direction: column;
+    }
 }
 .p-summary{
     width: 960px;
@@ -15,6 +19,9 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    @include mq(){
+        width: 100%;
+    }
     .p-summary{
         &__image{
             position: absolute;
@@ -24,6 +31,9 @@
             transition: all 1.5s ease-out 1s;
             transform: translateX(20px);
             opacity: 0;
+            @include mq(){
+                position: static;
+            }
         }
         &__intro{
             background: var(--themecolor);
@@ -34,6 +44,11 @@
             transition: all 1.5s ease-out 1s;
             transform: translateX(-20px);
             opacity: 0;
+            @include mq(){
+                float: none;
+                width: 100%;
+                height: auto;
+            }
         }
         &__heading{
             font-size: 6rem;
@@ -56,6 +71,9 @@
             transition: all 1.5s ease-out 1s;
             transform: translateX(-20px);
             opacity: 0;
+            @include mq(){
+                position: static;
+            }
         }
     }
     &.p-summary--right{
@@ -72,6 +90,9 @@
                 transition: all 1.5s ease-out 1s;
                 transform: translateX(20px);
                 opacity: 0;
+                @include mq(){
+                    float: none;
+                }
             }
             &__copy{
                 right: 0;

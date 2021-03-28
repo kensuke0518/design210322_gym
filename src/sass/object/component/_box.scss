@@ -3,6 +3,9 @@
     background: #fff;
     border: 1px solid var(--themecolor);
     padding: 15px;
+    @include mq(){
+        width: 100%;
+    }
     .c-announce{
         &__list-item{
             border-bottom: 1px dotted var(--themecolor);

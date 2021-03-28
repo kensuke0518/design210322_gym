@@ -3,6 +3,9 @@
     width:960px;
     padding: 15px 30px 20px;
     background: var(--themecolor);
+    @include mq(){
+        width: 100%;
+    }
     .c-card{
         &__title{
             font-weight: bold;
@@ -12,6 +15,9 @@
         &__items{
             display: flex;
             justify-content: space-between;
+            @include mq(){
+                flex-direction:column;
+            }
         }
         &__item{
             overflow: hidden;

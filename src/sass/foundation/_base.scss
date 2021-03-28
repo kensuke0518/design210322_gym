@@ -21,6 +21,7 @@ body{
     font-size: 1.6rem;
     line-height: 1.4;
     @include mq(){
+        min-width: 0;
         font-size: 16px;
     }
 }
@@ -37,6 +38,11 @@ ul{
 }
 img{
     vertical-align: bottom;
+    @include mq(){
+        width:100%;
+        max-width: 100%;
+        height: auto;
+    }
 }
 *,
 *::before,
