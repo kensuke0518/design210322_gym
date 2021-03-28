@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "svg.css",
+	"sources": [
+		"../../../../src/sass/object/project/svg.scss"
+	],
+	"names": [],
+	"mappings": "AAAI,AAAA,IAAI,AAAA,CAAC,IAAI,CAAC,OAAO,CAAG,AACpB,AAAA,IAAI,AAAA,CAAC,IAAI,CAAC,OAAO,CAAG,AACpB,AAAA,UAAU,AAAA,CACN,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACf,AACD,AAAA,YAAY,AAAA,CACR,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACf"
+}

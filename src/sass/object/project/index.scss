@@ -1,0 +1,102 @@
+.p-info{
+    width: 100%;
+    background: #fff5b2;
+}
+.p-info__inner{
+    width: 960px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.p-summary{
+    width: 960px;
+    min-height: 600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    .p-summary{
+        &__image{
+            position: absolute;
+            z-index:-1;
+            top:45px;
+            right:0;
+            transition: all 1.5s ease-out 1s;
+            transform: translateX(20px);
+            opacity: 0;
+        }
+        &__intro{
+            background: var(--themecolor);
+            padding: 30px;
+            width: 500px;
+            height: 500px;
+            float: left;
+            transition: all 1.5s ease-out 1s;
+            transform: translateX(-20px);
+            opacity: 0;
+        }
+        &__heading{
+            font-size: 6rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        &__text{
+            padding:0 25px;
+            line-height: 1.7;
+        }
+        &__copy{
+            position: absolute;
+            bottom:10px;
+            left: 0;
+            background: rgba($color: #000000, $alpha: .6);
+            color: #fff;
+            font-size: 4.8rem;
+            font-weight: bold;
+            padding: 5px 15px;
+            transition: all 1.5s ease-out 1s;
+            transform: translateX(-20px);
+            opacity: 0;
+        }
+    }
+    &.p-summary--right{
+        .p-summary{
+            &__image{
+                left:0;
+                right: auto;
+                transition: all 1.5s ease-out 1s;
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+            &__intro{
+                float: right;
+                transition: all 1.5s ease-out 1s;
+                transform: translateX(20px);
+                opacity: 0;
+            }
+            &__copy{
+                right: 0;
+                left: auto;
+                transition: all 1.5s ease-out 1s;
+                transform: translateX(20px);
+                opacity: 0;
+            }
+        }
+    }
+    &.is-show{
+        .p-summary{
+            &__image{
+                transform:translateX(0);
+                opacity: 1;
+            }
+            &__intro{
+                transform:translateX(0);
+                opacity: 1;
+            }
+            &__copy{
+                transform:translateX(0);
+                opacity: 1;
+            }
+        }
+    }
+}
+
