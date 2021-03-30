@@ -1,7 +1,7 @@
 .c-card{
     margin: 0 auto;
     width:960px;
-    padding: 15px 30px 20px;
+    padding: 1.5rem 3rem 2rem;
     background: var(--themecolor);
     @include mq(){
         width: 100%;
@@ -21,6 +21,12 @@
         }
         &__item{
             overflow: hidden;
+            @include mq(){
+                margin-top: 1.5rem;
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
             & > a{
                 position: relative;
             }

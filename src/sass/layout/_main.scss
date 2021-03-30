@@ -1,3 +1,5 @@
 .l-main{
-    padding: 35px 0 105px;
+        padding: 3.5rem 0 10.5rem;
+    @include mq(){
+    }
 }

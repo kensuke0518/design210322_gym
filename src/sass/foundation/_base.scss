@@ -2,7 +2,9 @@ html{
     box-sizing: border-box;
     font-size: 62.5%;
     @include mq(){
-        font-size: 50%;
+        //font-size: 50%;
+        font-size: calc(81% + 4 * (100vw - 650px) / 300);
+        //font-size: calc(70% + 4 * (100vw - 600px) / 400);
     }
 }
 
@@ -22,7 +24,6 @@ body{
     line-height: 1.4;
     @include mq(){
         min-width: 0;
-        font-size: 16px;
     }
 }
 a{

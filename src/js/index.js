@@ -14,6 +14,8 @@
     })
 })();
 
+const bodyWidth = document.body.clientWidth;
+const mqmd = 599; //ブレークポイント
 const gnavScroll = () => {
     const header = document.querySelector('.l-header');
     const gnav = document.querySelector('.l-gnav');
@@ -34,6 +36,13 @@ const gnavScroll = () => {
             header.style.paddingBottom = '';
         }
     }
-    window.addEventListener('scroll', () => headerPosition());
+    window.addEventListener('scroll', () => headerPosition(),false);
 }
-gnavScroll();
+//画面サイズを可変した時に再判定したい
+const bodyMovin = () => {
+    if (bodyWidth > mqmd) {
+        gnavScroll();
+    }
+};
+window.onload = bodyMovin;
+//window.onresize = bodyMovin;
