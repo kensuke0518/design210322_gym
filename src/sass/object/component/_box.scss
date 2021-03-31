@@ -26,7 +26,7 @@
             & > a{
                 border-bottom: 1px solid transparent;
                 padding-bottom: .2rem;
-                transition: all .5s;
+                transition: border-bottom .5s;
                 &:hover{
                     border-bottom: 1px solid #000;
                 }

@@ -13,6 +13,7 @@
     "mq": "postcss ./src/**/*.scss -u css-mqpacker",
     "autoprefix": "postcss docs/css/*.css -u autoprefixer -d docs/css/",
     "allrun": "run-s format:sass compile:sass mq autoprefix",
+    "bandle:webpack": "webpack --watch --mode=development --devtool=source-map",
     "watch:sass": "chokidar \"src/**/*.scss\" --command \"npm run allrun\"",
     "build": "webpack",
     "watch:webpack": "webpack -w",

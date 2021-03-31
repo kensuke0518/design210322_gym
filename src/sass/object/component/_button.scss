@@ -9,7 +9,7 @@
     border-top: 1px solid #fff;
     font-weight: bold;
     animation: bound 2s infinite;
-    transition: all .5s;
+    transition: transform .5s;
     @include mq(){
         width: 100%;
     }
@@ -26,6 +26,53 @@
     transform: translateY(0);
     animation: none;
 }
+.c-hamburger{
+    @mixin hamburger{
+        background: color(siteC);
+        border-radius: 5px;
+        display: block;
+        height: 5px;
+        transition: transform 250ms ease-in;
+        width: 48px;
+    }
+    width: 48px;
+    &__link{
+        display: inline-block;
+        height: 35px;
+        width: 48px;
+    }
+    &__btn{
+        @include hamburger;
+        position: relative;
+        &::before,&::after{
+            @include hamburger;
+            content: "";
+            position: absolute;
+        }
+        &::before{
+            left:0;
+            top:15px;
+        }
+        &::after{
+            left:0;
+            top:30px;
+        }
+    }
+    &.is-gnav-open{
+        .c-hamburger{
+            &__btn{
+                transform: translate(0px,15px) rotate(45deg);
+                &::before{
+                    transform: translate(0,-15px) rotate(-90deg);
+                }
+                &::after{
+                    transform: translate(0,-30px) rotate(-90deg);
+                }
+            }
+        }
+    }
+}
+
 @keyframes bound{
     0%{transform: translateY(0)}
     35%{transform: translateY(-20px)}
