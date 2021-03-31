@@ -55,14 +55,14 @@
             font-size: 6.1rem;
             font-weight: bold;
             text-shadow:
-            2px  2px 0px #fff,
-            -2px  2px 0px #fff,
-            2px -2px 0px #fff,
-            -2px -2px 0px #fff,
-            2px  0px 0px #fff,
-            0px  2px 0px #fff,
-            -2px  0px 0px #fff,
-            0px -2px 0px #fff;
+            1px  1px 0px #fff,
+            -1px  1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px -1px 0px #fff,
+            1px  0px 0px #fff,
+            0px  1px 0px #fff,
+            -1px  0px 0px #fff,
+            0px -1px 0px #fff;
             @include mq(){
                 position: static;
                 writing-mode:horizontal-tb;
@@ -81,14 +81,14 @@
                 left: auto;
                 right: 50%;
                 text-shadow:
-                2px  2px 0px #000,
-                -2px  2px 0px #000,
-                2px -2px 0px #000,
-                -2px -2px 0px #000,
-                2px  0px 0px #000,
-                0px  2px 0px #000,
-                -2px  0px 0px #000,
-                0px -2px 0px #000;
+                1px  1px 0px #000,
+                -1px  1px 0px #000,
+                1px -1px 0px #000,
+                -1px -1px 0px #000,
+                1px  0px 0px #000,
+                0px  1px 0px #000,
+                -1px  0px 0px #000,
+                0px -1px 0px #000;
                 .l-mv__copy-char{
                     transform: translateX(1em);
                     animation: textSlideToLeft 1s ease-in-out;
