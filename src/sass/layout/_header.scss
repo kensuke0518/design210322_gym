@@ -114,6 +114,10 @@
         padding: 1rem 0 2rem;
         overflow: hidden;
         z-index: -10;
+        visibility: hidden;
+        .is-gnav-open{
+            visibility: visible;
+        }
     }
     .l-gnav{
         &__inner{
