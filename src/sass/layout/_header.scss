@@ -115,7 +115,7 @@
         overflow: hidden;
         z-index: -10;
         visibility: hidden;
-        .is-gnav-open{
+        &.is-gnav-open{
             visibility: visible;
         }
     }
