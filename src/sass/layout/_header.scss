@@ -113,10 +113,10 @@
         height: 101%;
         padding: 1rem 0 2rem;
         overflow: hidden;
-        z-index: -10;
         visibility: hidden;
         &.is-gnav-open{
             visibility: visible;
+            box-shadow: 10px 0 20px -10px rgba($color: #000000, $alpha: .8) inset;
         }
     }
     .l-gnav{
