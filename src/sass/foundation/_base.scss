@@ -39,11 +39,9 @@ ul{
 }
 img{
     vertical-align: bottom;
-    @include mq(){
-        width:100%;
-        max-width: 100%;
-        height: auto;
-    }
+    width:100%;
+    max-width: 100%;
+    height: auto;
 }
 *,
 *::before,
